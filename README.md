@@ -5,4 +5,4 @@ The network emulator requires Python 3. You can use the emulator either by execu
 Find usage instructions using ./nEmulator -h
 
 # Data Flow
-![title][https://raw.githubusercontent.com/saxenavinayak/UDP_Simulator/refs/heads/main/images/dataflow.png]
+![title](https://raw.githubusercontent.com/saxenavinayak/UDP_Simulator/refs/heads/main/images/dataflow.png)
