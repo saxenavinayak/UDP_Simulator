@@ -1,0 +1,15 @@
+#!/bin/bash
+nemulator_port_to_recieve_from_sender=6000
+reciever_network_address=127.0.0.1
+recieiver_recieving_udp_port_number=6002
+nemulartor_port_to_recieve_from_reciever=6001
+sender_network_address=127.0.0.1
+sender_reciving_udp_port_number=6003
+maximum_delay=30
+drop_probability=0.9
+verb=1
+python3 network_emulator.py $nemulator_port_to_recieve_from_sender \
+    $reciever_network_address $recieiver_recieving_udp_port_number \
+    $nemulartor_port_to_recieve_from_reciever \
+    $sender_network_address $sender_reciving_udp_port_number \
+    $maximum_delay $drop_probability $verb

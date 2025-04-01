@@ -1,0 +1,16 @@
+#!/bin/bash
+# Connect with nemulator
+nemulator_address=127.0.0.1
+nemulator_forwards_port_number=6000
+sender_reciving_udp_port_number=6003
+timeout=60
+file=$1
+python3 sender.py $nemulator_address $nemulator_forwards_port_number $sender_reciving_udp_port_number $timeout $file
+
+# Connect directly
+# nemulator_address=127.0.0.1
+# nemulator_forwards_port_number=6002
+# sender_reciving_udp_port_number=6003
+# timeout=500
+# file=$1
+# python3 sender.py $nemulator_address $nemulator_forwards_port_number $sender_reciving_udp_port_number $timeout $file

@@ -1,0 +1,14 @@
+#!/bin/bash
+# Start with emulator
+nemulator_address=127.0.0.1
+nemulator_backwards_port_number=6001
+reciever_port=6002
+file=$1
+python3 receiver.py $nemulator_address $nemulator_backwards_port_number $reciever_port $file
+
+# start directly
+# nemulator_address=127.0.0.1
+# nemulator_backwards_port_number=6003
+# reciever_port=6002
+# file=$1
+# python3 receiver.py $nemulator_address $nemulator_backwards_port_number $reciever_port $file
